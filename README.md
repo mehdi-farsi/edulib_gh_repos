@@ -1,24 +1,21 @@
-# README
+# Edulib GH Repos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The goal is to display public repositories from the `edulib-france` organization.
 
-Things you may want to cover:
+## Install & Run
 
-* Ruby version
+```sh
+bundle install
+```
 
-* System dependencies
+```sh
+whenever --update-crontab
+```
 
-* Configuration
+Wait a minute (time for the first cronjob to run)
 
-* Database creation
+```sh
+bin/rails s
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Finally, visit `http://localhost:3000`.
