@@ -1,0 +1,13 @@
+.container-fluid
+  .row.justify-content-around
+    %h1.headline.col-11.col-md-6
+      Repositories List
+  .row.justify-content-around
+    .repositories.col-11.col-md-6
+      .card
+        .card-header Repositories
+        .card-body
+          %table.table
+            %thead
+            %tbody
+              = render @repositories

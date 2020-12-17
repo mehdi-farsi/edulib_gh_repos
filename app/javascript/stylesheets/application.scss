@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/bootstrap';
+
+// declared first to avoid to @import in each partials
+@import 'variables';
+
+// basic tags + reusable classes
+@import 'base';
+
+// layouts
+@import 'navbar';
+@import 'repositories';
+
+$fa-font-path: '~@fortawesome/fontawesome-free-webfonts/webfonts';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free-webfonts/scss/fa-solid';
+

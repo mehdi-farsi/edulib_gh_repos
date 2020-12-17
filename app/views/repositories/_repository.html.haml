@@ -1,0 +1,24 @@
+%tr.accordion-toggle.collapsed{'id' => "accordion-#{repository.id}", "data-parent" => "#accordion-#{repository.id}", "data-toggle" => "collapse", :href => "#collapse-#{repository.id}"}
+  %td.expand-button
+  %td{colspan: '6'}
+    = link_to repository.name, repository.html_url
+%tr.hide-table-padding
+  %td
+  %td{:colspan => "6"}
+    .collapse.in.p-3{'id' => "collapse-#{repository.id}"}
+      .row
+        .col-12
+          = repository.description || "No description"
+      .row
+        .col-12 Last update: #{repository.updated_at.strftime("%F")}
+      .row
+        .col-12
+          %ul.list-inline
+            %li.list-inline-item
+              Star
+              %i.fa.fa-star.p-2
+              = repository.stargazers_count
+            %li.list-inline-item
+              Fork
+              %i.fa.fa-star.p-2
+              = repository.forks

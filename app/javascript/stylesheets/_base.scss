@@ -1,0 +1,42 @@
+body {
+  padding-top: $navbar-height + 20px;
+
+  .row {
+    margin-bottom: map-get($margins, md);
+  }
+
+  .table th, .table td {
+    padding: 3px!important;
+  }
+
+  .table {
+    table-layout: fixed;
+  }
+
+  .description {
+    font-size: 1.05rem;
+    line-height: 2;
+    letter-spacing: 2;
+    color: map-get($colors, description);
+    font-family: 'Helvetica', sans-serif;
+  }
+
+  .btn-subscribe {
+    width: 100%;
+    font-family: 'Helvetica', sans-serif;
+    background-color: map-get($colors, btn-subscribe-bg-color);
+    border-color: map-get($colors, btn-subscribe-bg-color);
+    color: map-get($colors, btn-subscribe-color);
+    border-radius: 5px;
+    font-size: 1.4rem;
+  }
+
+  .headline {
+    color: map-get($colors, headline);
+    font-family: 'Helvetica', sans-serif;
+  }
+
+  img {
+    width: 100%;
+  }
+}
