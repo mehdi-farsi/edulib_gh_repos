@@ -6,8 +6,6 @@ require 'active_repository/github'
 require 'active_repository/item'
 
 module ActiveRepository
-  attr :adapter
-
   def connection
     # e.g: ActiveRepository::Github for :github adapter
     @adapter ||= const_get("active_repository/#{config.adapter}".camelize).new
